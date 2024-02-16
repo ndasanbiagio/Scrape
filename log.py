@@ -23,11 +23,11 @@ def get_drver():
 
 def main():
     driver = get_drver()
-    driver.find_element(by="id", value="id_username").send_keys("automated")
+    driver.find_element(by="id", value="id_username").send_keys("nxxxx@gmail.com")
     time.sleep(2)
-    driver.find_element(by="id", value="id_password").send_keys("automatedautomated" + Keys.RETURN)
+    driver.find_element(by="id", value="id_password").send_keys("Nicoxxxx" + Keys.RETURN)
     time.sleep(2)
-    driver.find_element(by="xpath", value="/html/body/nav/div/a").click()
+    driver.find_element(by="xpath", value="/html/body/footer/div/section/div/div[1]/div[1]/div[1]/nav/ul/li[1]/a").click()
     print(driver.current_url)
 
 print(main())
