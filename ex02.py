@@ -20,9 +20,9 @@ def get_web():
 
 def info_main():
     info_data = get_web()
-    info_data.find_element(by="CustomerEmail", value="").send_keys("") # Put of username
+    info_data.find_element(by="id", value="CustomerEmail").send_keys("") # Put of username
     time.sleep(2)
-    info_data.find_element(by="CustomerPassword", value="").send_keys("" + Keys.RETURN) # Put of password
+    info_data.find_element(by="id", value="CustomerPassword").send_keys("" + Keys.RETURN) # Put of password
     time.sleep(2)
     info_data.find_element(by="", value="").click()
     print(info_data.current_url)
